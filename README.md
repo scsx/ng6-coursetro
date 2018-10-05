@@ -1,12 +1,22 @@
 # Notas Dev
 
 Services, REST
+
 Routing; dynamic links:
 
 `{
+
     path: 'details/:id',
+
     component: DetailsComponent
-  }`
+
+}`
+
+Routing; page active class:
+
+`
+import { Router, NavigationEnd } from '@angular/router';
+`
 
 
 # Ng6Coursetro
