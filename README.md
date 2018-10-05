@@ -2,10 +2,11 @@
 
 Services, REST
 Routing; dynamic links:
-{
+
+`{
     path: 'details/:id',
     component: DetailsComponent
-  }
+  }`
 
 
 # Ng6Coursetro
