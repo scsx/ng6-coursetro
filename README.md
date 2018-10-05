@@ -19,8 +19,7 @@ Animations
 
 Limit a for:
 
-`
-div *ngFor="let pic of photos$; let i=index"
+`div *ngFor="let pic of photos$; let i=index"
 
         div class="pic" *ngIf="i < 20"
 
@@ -29,9 +28,8 @@ div *ngFor="let pic of photos$; let i=index"
             h5{{ pic.title }}/h5
 
         /div
-        
-    /div
-    `
+
+/div`
     
 
 # Ng6Coursetro
