@@ -19,12 +19,12 @@ Animations
 
 Limit a for:
 `
-<div *ngFor="let pic of photos$; let i=index">
-        <div class="pic" *ngIf="i < 20">
-            <img src="{{ pic.url }}" alt="{{ pic.title }}">
-            <h5><b>{{ i + 1 }} </b>{{ pic.title }}</h5>
-        </div>
-    </div>
+div *ngFor="let pic of photos$; let i=index"
+        div class="pic" *ngIf="i < 20"
+            img src="{{ pic.url }}" alt="{{ pic.title }}"
+            h5{{ pic.title }}/h5
+        /div
+    /div
     `
     
 
