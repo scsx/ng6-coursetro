@@ -8,17 +8,25 @@ import { PostsComponent } from './posts/posts.component';
 import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 
+// service data (data.service.ts //// users)
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PhotosComponent } from './photos/photos.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     PostsComponent,
     UsersComponent,
-    DetailsComponent
+    DetailsComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

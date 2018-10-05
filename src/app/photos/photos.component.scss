@@ -1,0 +1,23 @@
+#photos {
+    .allpics {
+        .pic {
+            float: left;
+            width: 33.33%;
+            padding: 20px;
+            img {
+                width: 100%;
+            }
+
+            h5 {
+                font-weight: 400;
+                font-size: 17px;
+                color: #666;
+
+                b {
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

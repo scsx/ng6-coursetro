@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import {DataService} from '../data.service';
-import { Observable } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
+import {Observable} from 'rxjs';
 import { trigger,style,transition,animate,keyframes,query,stagger } from '@angular/animations';
 
 @Component({
-  selector: 'app-posts',
-  templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.scss'],
+  selector: 'app-photos',
+  templateUrl: './photos.component.html',
+  styleUrls: ['./photos.component.scss'],
   animations: [
     trigger('listStagger', [
       transition('* <=> *', [
@@ -32,16 +31,17 @@ import { trigger,style,transition,animate,keyframes,query,stagger } from '@angul
     ])
   ]
 })
-export class PostsComponent implements OnInit {
+export class PhotosComponent implements OnInit {
 
-    posts$: Object;
+  photos$: Object;
+  //let maxPhotos = 40;
 
-    constructor(private data: DataService) { }
+  constructor(private data: DataService) { }
 
-    ngOnInit() {
-        this.data.getPosts().subscribe(
-            data => this.posts$ = data 
-        );
-    }
+  ngOnInit() {
+    this.data.getPhotos().subscribe(
+      data => this.photos$ = data 
+    );
+  }
 
 }

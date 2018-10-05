@@ -1,3 +1,13 @@
+# Notas Dev
+
+Services, REST
+Routing; dynamic links:
+{
+    path: 'details/:id',
+    component: DetailsComponent
+  }
+
+
 # Ng6Coursetro
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
