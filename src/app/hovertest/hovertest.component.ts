@@ -25,6 +25,7 @@ export class HovertestComponent implements OnInit {
     canonicalForm() {
         this.canonicalMessage = "This also works";
         console.log("This also works");
+        //console.log("ttt");
     }
 
 }
