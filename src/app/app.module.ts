@@ -12,6 +12,7 @@ import { DetailsComponent } from './details/details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PhotosComponent } from './photos/photos.component';
+import { HovertestComponent } from './hovertest/hovertest.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PhotosComponent } from './photos/photos.component';
     PostsComponent,
     UsersComponent,
     DetailsComponent,
-    PhotosComponent
+    PhotosComponent,
+    HovertestComponent
   ],
   imports: [
     BrowserModule,

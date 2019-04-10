@@ -6,61 +6,80 @@
 }
 
 body {
-  margin: 0;
-  background: #F2F2F2;
-  font-family: 'Tajawal', sans-serif;
-  height: 100vh;
+    margin: 0;
+    background: #F2F2F2;
+    font-family: 'Tajawal', sans-serif;
+    height: 100vh;
 }
 
 #container {
-  display: grid;
-  grid-template-columns: 70px auto;
-  height: 100%;
+    display: grid;
+    grid-template-columns: 70px auto;
+    height: 100%;
 
-  #content {
-    padding: 30px 50px;
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-
-      li {
-        background: #fff;
-        border-radius: 8px;
-        padding: 20px;
-        margin-bottom: 8px;
-
-        a {
-          font-size: 1.5em;
-          text-decoration: none;
-          font-weight: bold;
-          color: #00A8FF;
-        }
+    #content {
+        padding: 30px 50px;
 
         ul {
-          margin-top: 20px;
-
-          li {
+            list-style-type: none;
+            margin: 0;
             padding: 0;
 
-            a {
-              font-size: 1em;
-              font-weight: 300;
-            }
-            .phone {
-                font-size: 1.2em;
-            }
-          }
-        }
+            li {
+                background: #fff;
+                border-radius: 8px;
+                padding: 20px;
+                margin-bottom: 8px;
 
-        h3 {
-            margin: 0;
-            font-size: 2em;
-            color: #6067c4;
-            line-height: 1.1;
+                a {
+                    font-size: 1.5em;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: #00A8FF;
+                }
+
+                ul {
+                    margin-top: 20px;
+
+                    li {
+                        padding: 0;
+
+                        a {
+                            font-size: 1em;
+                            font-weight: 300;
+                        }
+
+                        .phone {
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+
+                h3 {
+                    margin: 0;
+                    font-size: 2em;
+                    color: #6067c4;
+                    line-height: 1.1;
+                }
+            }
         }
-      }
     }
-  }
 }
+
+
+// hover tests
+.displayflex {
+    display: flex;
+    div {
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        margin-right: 20px;
+        &.blue {
+            background: #a9e2ff;
+        }
+        &.green {
+            background: #cdf78d;
+        }
+    }
+} 

@@ -1,0 +1,19 @@
+<h2>Hover on div and function</h2>
+<div class="displayflex">
+    <div class="blue" (mouseenter)="mouseEnter('blue') " (mouseleave)="mouseLeave('blue')">
+        <h3>(mouseenter) blue</h3>
+    </div>
+    <div class="green" (mouseenter)="mouseEnter('green')" (mouseleave)="mouseLeave('green')">
+        <h3>(mouseenter) green</h3>
+    </div>
+    <div>
+        <h4>{{ message }}</h4>
+    </div>
+</div>
+<hr>
+<div class="displayflex">
+    <div class="green" on-mouseover='canonicalForm()'>
+        <h4>on-mouseover='function()'</h4>
+        <p>{{ canonicalMessage }}</p>
+    </div>
+</div>

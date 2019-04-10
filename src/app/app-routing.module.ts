@@ -4,6 +4,7 @@ import { UsersComponent } from './users/users.component';
 import { DetailsComponent } from './details/details.component';
 import { PostsComponent } from './posts/posts.component';
 import { PhotosComponent } from './photos/photos.component';
+import { HovertestComponent } from './hovertest/hovertest.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'photos',
     component: PhotosComponent
+  },
+  {
+    path: 'hover',
+    component: HovertestComponent
   }
 ];
 
